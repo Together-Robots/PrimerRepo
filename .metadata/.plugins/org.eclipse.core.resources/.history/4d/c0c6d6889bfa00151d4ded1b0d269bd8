@@ -20,6 +20,5 @@ public class ContadorDeGanadoTest {
 
 		//limpiar buffer del constructor
 		miContador = null;
-		//que onda con el status de git?
 	}	
 }
