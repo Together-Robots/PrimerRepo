@@ -1,0 +1,65 @@
+package ar.edu.unlam.tallerweb.clase1;
+
+import static org.junit.Assert.*;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+public class ContadorDeGanadoTest {
+	
+	@Test 
+	public void testQuePuedaContar() {
+		
+		ContadorDeGanado miContador = new ContadorDeGanado();
+		Integer cantidadEsperada=1; //si es 2 da error
+		
+		/*Le cargue el valor 1 a la variable cantidadEsperada*/
+		
+		//Ejecucion
+		
+		/*Le concateno la funcion contar a mi objeto miContador
+		 Declaro la variable cantidadObtenida y la igualo
+		 al valor que devuelve la funcion de mi objeto
+		 Recordar de la otra clase que se le carga valor "1"
+		 */
+		miContador.contar();
+		Integer cantidadObtenida=miContador.mostrarCantidad();
+		
+		//Validacion
+		
+		/*Los Assert basicamente sirven para comparar valores
+		Existen varios tipos de comparador, en este caso 
+		usamos el assertEquals que compara la cantidadEsperada
+		con la cantidadObtenida 1=1 ?*/
+		
+		Assert.assertEquals(cantidadEsperada, cantidadObtenida);
+		
+		//Limpieza
+		
+		/*Es necesario limpiar el constructor del objeto por si
+		 se desea correr nuevamente el programa ya que
+		 si no se limpia podrìa quedar basura en el buffer
+		 y generarìa algun error. 
+		 Mas que nada se usa para optimizar.
+		 */
+		
+		miContador=null;
+	}
+	
+	//Crear un contador que devuelva 0 ? 
+	
+	/*
+	@Test
+	public void testQueDaZeroCuandoCorre() {
+		//preparacion
+		ContadorDeGanado miContador = new ContadorDeGanado();
+		Integer cantidadEsperada=0; //si es 2 da error
+		//Ejecucion
+		miContador.contar();
+		Integer cantidadObtenida=miContador.mostrarCantidad();
+		//Validacion
+		Assert.assertEquals(cantidadEsperada, cantidadObtenida);
+		//Limpieza
+		miContador=null;*/
+	
+} //FIN Del Constructor Defautl.

@@ -1,0 +1,44 @@
+package ar.edu.unlam.tallerweb.clase1;
+
+/*INI del constructor por default ContadorDeGanadoTest*/
+
+public class ContadorDeGanado {
+
+	/*
+	 * Declaro una variable "cantidad" y la inizializo en 0 Los tipos public
+	 * permiten usar la variable desde cualquier parte del programa. Los tipos
+	 * private permiten el acceso solo por una clase. Los tipos protected desde
+	 * la clase y sus herencias.
+	 */
+
+	/*
+	 * Integer es el tipo de dato, en este caso se declara entero al objeto.
+	 */
+
+	private Integer cantidad = 0;
+
+	/*
+	 * Declaro el metodo contar() como publico y tipo void por lo que dentro del
+	 * parentesis no le cargo ningun parametro
+	 */
+
+	public void contar() {
+
+		cantidad = cantidad + 1; // logica del contador
+
+	}
+
+	/*
+	 * Los metodos son funciones, en este caso como en un main de c necesito
+	 * llamar a la funcion para que devuelva un valor
+	 */
+
+	// Declaracion del metodo mostrarCantidad()
+
+	public Integer mostrarCantidad() {
+
+		return cantidad; // Retorno/Devuelvo la cantidad
+
+	}
+
+} // FIN Del Constructor Defautl.
